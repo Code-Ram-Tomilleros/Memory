@@ -1,0 +1,22 @@
+.content {
+    margin-top: 85px;
+  display: flex;
+}
+.game-board {
+  width: 44%;
+  display: grid;
+  grid-template-columns: 130px 130px 130px 130px 130px;
+  grid-template-rows: 130px 130px 130px 130px;
+  grid-gap: 1px;
+}
+.box {
+  background-color: #444;
+}
+.vidas,
+.jugador {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
