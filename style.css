@@ -1,3 +1,32 @@
+body {
+  background-color: #fff;
+  font-family: "goldman-regular";
+  color: #aaa;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header form {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-dark {
+  background-color: #000;
+  border-bottom: 5px solid #4b64b6;
+}
+
+h3 {
+  margin-left: 492px;
+  color: #fff;
+}
+
 .content {
     margin-top: 85px;
   display: flex;
