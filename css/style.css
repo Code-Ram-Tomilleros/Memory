@@ -17,10 +17,7 @@ header form {
   text-align: center;
 }
 
-.navbar-dark {
-  background-color: #000;
-  border-bottom: 5px solid #4b64b6;
-}
+
 
 h3 {
   margin-left: 492px;
@@ -28,24 +25,28 @@ h3 {
 }
 
 .content {
-    margin-top: 85px;
+    margin-top: 75px;
   display: flex;
 }
 .game-board {
+  margin-top: 25px;
   width: 44%;
   display: grid;
   grid-template-columns: 130px 130px 130px 130px 130px;
   grid-template-rows: 130px 130px 130px 130px;
   grid-gap: 1px;
 }
+
+
 .box {
   background-color: #444;
 }
-.vidas,
+
 .jugador {
-  width: 33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  margin-top: 25px;
+  width: 25%;
+}
+.vidas {
+  margin-top: 25px;
+  margin-left: 155px;
 }
