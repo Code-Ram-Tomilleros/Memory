@@ -1,0 +1,62 @@
+.navbar-dark {
+  background-color: #000;
+  border-bottom: 5px solid #4b64b6;
+}
+
+h3 {
+  margin-left: 492px;
+  color: #fff;
+}
+
+.content {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-board {
+  margin-top: 25px;
+  width: 44%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 130px 130px 130px 130px 130px;
+      grid-template-columns: 130px 130px 130px 130px 130px;
+  -ms-grid-rows: 130px 130px 130px 130px;
+      grid-template-rows: 130px 130px 130px 130px;
+  grid-gap: 1px;
+}
+
+.box {
+  background-color: #444;
+}
+
+.jugador {
+  margin-top: 25px;
+  width: 25%;
+}
+
+.vidas {
+  margin-top: 25px;
+  margin-left: 155px;
+}
+
+body {
+  background-color: #fff;
+  font-family: "goldman-regular";
+  color: #aaa;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header form {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=base.css.map */
