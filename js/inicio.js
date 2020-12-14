@@ -33,9 +33,7 @@ boton.onclick=()=>{
         //generada la partida, mostramos juego.html en el iframe
         pantallaInicio.classList.add ("ocultar")
         pantallaJuego.classList.remove("ocultar")
-        document.querySelector("body").style.backgroundImage=url("../images/fondos/stars2.png")
-
-        
+        document.querySelector("body").style.backgroundImage="url('./images/fondos/stars1.png')" 
     }
     else{
         console.log("Está vacío")

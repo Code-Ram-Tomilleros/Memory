@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Ram</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
 </head>
-<body> 
-    <!-- INICIO PANT INIC -->
 
-    
-    <main id="inicioFondo" class="content mostrar">
+<body>
+    <!-- INICIO PANT INIC -->
+    <div id="inicioFondo" class="content mostrar">
         <div class="row justify-content-center ">
             <h1 class="titulo">Memoram</h1>
         </div>
@@ -20,61 +21,69 @@
             <div class="inicio"> </div>
         </div>
         <div class="row justify-content-center">
-    
             <input type="text" id="inicioNombre" autocomplete="off">
-    
         </div>
-    
         <div class="row justify-content-center">
-    
             <button id="inicioJugar">Jugar</button>
         </div>
-        </div>
-      </div>
-    </main>
-    
+    </div>
     <!-- FIN PANT INIC -->
 
-    <main id="juegoFondo" class="content ocultar">
 
 
-    </main>
-    
     <!-- INICIO PANT JUEGO -->
-    
-        <!--INICIO CABECERA -->
-            <header class="header align-middle justify-content-center ocultar">
-                <nav class="navbar navbar-dark navbar-expand-sm">
-                <a class="navbar-brand" href="#">
-                    <img src="img/LOGOram.png" width="60" height="50" class="d-inline-block align-center" alt="">
-                </a>
-                <h3>M E M O R A M</h3>
-                </nav>
-            </header>
-        <!-- FIN CABECERA -->
-        <!-- INICIO CONTENIDO -->
-        
-        
-        
-        <!--FIN CONTENIDO  -->
+    <!--INICIO CABECERA -->
+    <header class="header align-middle justify-content-center ocultar">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a class="navbar-brand" href="#">
+                <img src="img/LOGOram.png" width="60" height="50" class="d-inline-block align-center" alt="">
+            </a>
+            <h3>M E M O R A M</h3>
+        </nav>
+    </header>
+    <!-- FIN CABECERA -->
+    <!-- INICIO CONTENIDO -->
+    <div id="juegoFondo" class="content ocultar"></div>
+    <!--FIN CONTENIDO  -->
     <!-- FIN PANTALLA JUEGO -->
+
+
     <!-- INICIO MODAL -->
-
-
-
-
+    <div class="modal_container" id="modal_tiempo">
+        <div class="modal_window">
+            <h2 class="modal_title">¡Se acábo el tiempo!</h2>
+            <button class="modal_button">Nueva partida</button>
+            <button class="modal_button" id="modal_btn_renunciar_tiempo">Renunciar</button>
+        </div>
+    </div>
+    <div class="modal_container ocultar" id="modal_ganador">
+        <div class="modal_window">
+            <h2 class="modal_title">¡Has ganado!</h2>
+            <button class="modal_button">Siguiente nivel</button>
+            <button class="modal_button" id="modal_btn_renunciar_ganador">Renunciar</button>
+        </div>
+    </div>
+    <div class="modal_container ocultar" id="modal_perdedor">
+        <div class="modal_window">
+            <h2 class="modal_title">¡Has perdido!</h2>
+            <button class="modal_button">Nueva partida</button>
+            <button class="modal_button" id="modal_btn_renunciar_perdedor">Renunciar</button>
+        </div>
+    </div>
     <!-- FIN MODAL -->
 
-<!-- INICIO FOOTER -->
+
+    <!-- INICIO FOOTER -->
 
 
 
-<!-- FIN FOOTER -->
-   
+    <!-- FIN FOOTER -->
 
-<!-- JAVASCRIPT -->
+
+    <!-- JAVASCRIPT -->
     <script src="js/inicio.js"></script>
     <script src="js/juego.js"></script>
     <script src="js/modal.js"></script>
 </body>
+
 </html>

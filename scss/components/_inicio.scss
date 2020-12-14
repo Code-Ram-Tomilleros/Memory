@@ -3,12 +3,15 @@
      src: url("../fonts/VT323-Regular.ttf");
    }
 
+  h1 {
+    margin: 0px;
+  }
   body{
     background-image: url("../images/fondos/stars2.png");
     font-family: "VT323-Regular";
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: top center;
     }
     
  
@@ -21,27 +24,25 @@
      background-color: #f4abba;
      color:white;
      border-radius:none;
-    outline:none;
+     outline:none;
    }
    
    .form-submit-button,.form-submit-button-img{
-   
      box-shadow: none !important;
-   
    }
    
    #inicioFondo{
-     
      margin-top:150px;
-   
    }
    
    .titulo{
      font-family: "VT323-Regular";
      font-size: 9em;
      color: white;
-     margin-top: 50px;
+     margin-top: 90px;
+     margin-bottom: 0px;
    }
+
    #inicioNombre{
      width: 200px;
      height: 45px;
@@ -50,11 +51,10 @@
    }
    
    .inicio{
- 
      font-family: "VT323-Regular";
      font-size: 4em;
      color: white;
-     
+     margin: 0px;
    }
    
    
