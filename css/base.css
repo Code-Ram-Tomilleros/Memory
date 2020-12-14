@@ -10,6 +10,7 @@
 
 h1 {
   margin: 0px;
+  font-size: 80%;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   width: 120px;
   height: 50px;
   font-size: 1.5em;
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: #f4abba;
   color: white;
   border-radius: none;
@@ -43,7 +44,7 @@ body {
 
 .titulo {
   font-family: "VT323-Regular";
-  font-size: 9em;
+  font-size: 5em;
   color: white;
   margin-top: 90px;
   margin-bottom: 0px;
@@ -58,7 +59,7 @@ body {
 
 .inicio {
   font-family: "VT323-Regular";
-  font-size: 4em;
+  font-size: 2em;
   color: white;
   margin: 0px;
 }
