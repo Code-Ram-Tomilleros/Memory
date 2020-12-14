@@ -1,0 +1,33 @@
+#juegoFondo{
+  background-image: url("../images/fondos/stars2.png");
+}
+
+h3 {
+    margin-left: 492px;
+    color: #fff;
+  }
+  .content {
+      margin-top: 75px;
+    display: flex;
+  }
+  .game-board {
+    margin-top: 25px;
+    width: 44%;
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px 130px;
+    grid-gap: 1px;
+  }
+  .box {
+    background-color: #444;
+  }
+  
+  .jugador {
+    margin-top: 25px;
+    width: 25%;
+  }
+  .vidas {
+    margin-top: 25px;
+    margin-left: 155px;
+  }
+ 

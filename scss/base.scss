@@ -2,13 +2,13 @@
 @import "./components/inicio";
 @import "./components/juego";
 @import "./components/modal";
-
-
+ 
+/*
 body {
     background-color: #fff;
     font-family: "goldman-regular";
     color: #aaa;
-  }
+  } */
   
   header {
     position: fixed;
@@ -21,4 +21,10 @@ body {
   header form {
     width: 100%;
     text-align: center;
+  }
+  .mostrar{
+    display:block;
+  }
+  .ocultar{
+    display:none;
   }

@@ -3,6 +3,79 @@
   border-bottom: 5px solid #4b64b6;
 }
 
+@font-face {
+  font-family: "VT323-Regular";
+  src: url("../fonts/VT323-Regular.ttf");
+}
+
+body {
+  background-image: url("../images/fondos/stars2.png");
+  font-family: "VT323-Regular";
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#inicioJugar {
+  font-family: "VT323-Regular";
+  width: 120px;
+  height: 50px;
+  font-size: 1.5em;
+  margin-top: 50px;
+  background-color: #f4abba;
+  color: white;
+  border-radius: none;
+  outline: none;
+}
+
+.form-submit-button, .form-submit-button-img {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#inicioFondo {
+  margin-top: 150px;
+}
+
+.titulo {
+  font-family: "VT323-Regular";
+  font-size: 9em;
+  color: white;
+  margin-top: 50px;
+}
+
+#inicioNombre {
+  width: 200px;
+  height: 45px;
+  font-size: 2em;
+  font-family: "VT323-Regular";
+}
+
+.inicio {
+  font-family: "VT323-Regular";
+  font-size: 4em;
+  color: white;
+}
+
+.ocultar {
+  display: none;
+}
+
+.nombre {
+  width: 200px;
+  height: 160px;
+}
+
+/* @media only screen and (max-width: 767px) {
+     body{
+    background-image: url("../images/stars.jpg");
+    
+    
+   } */
+#juegoFondo {
+  background-image: url("../images/fondos/stars2.png");
+}
+
 h3 {
   margin-left: 492px;
   color: #fff;
@@ -41,12 +114,12 @@ h3 {
   margin-left: 155px;
 }
 
+/*
 body {
-  background-color: #fff;
-  font-family: "goldman-regular";
-  color: #aaa;
-}
-
+    background-color: #fff;
+    font-family: "goldman-regular";
+    color: #aaa;
+  } */
 header {
   position: fixed;
   top: 0px;
@@ -58,5 +131,13 @@ header {
 header form {
   width: 100%;
   text-align: center;
+}
+
+.mostrar {
+  display: block;
+}
+
+.ocultar {
+  display: none;
 }
 /*# sourceMappingURL=base.css.map */
