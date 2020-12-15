@@ -3,15 +3,27 @@
      src: url("../fonts/VT323-Regular.ttf");
    }
 
+<<<<<<< HEAD
    
 
+=======
+  h1 {
+    margin: 0px;
+    font-size: 80%;
+  }
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
   body{
     background-image: url("../images/fondos/stars1.png");
     font-family: "VT323-Regular";
     background-size: cover;
     background-attachment: fixed;
+<<<<<<< HEAD
     background-position: center center;
     } 
+=======
+    background-position: top center;
+    }
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
     
  
    #inicioJugar{
@@ -19,18 +31,21 @@
      width: 120px;
      height: 50px;
      font-size: 1.5em;
+<<<<<<< HEAD
      margin-top: 40px;
+=======
+     margin-top: 20px;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
      background-color: #f4abba;
      color:white;
      border-radius:none;
-    outline:none;
+     outline:none;
    }
    
    .form-submit-button,.form-submit-button-img{
-   
      box-shadow: none !important;
-   
    }
+<<<<<<< HEAD
    .cabecera{
     font-family: "VT323-Regular";
     font-size: 3em;
@@ -50,14 +65,25 @@
    .brain{
     display:block;
     margin:auto;
+=======
+   
+   #inicioFondo{
+     margin-top:150px;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
    }
    
    .titulo{
      font-family: "VT323-Regular";
+<<<<<<< HEAD
      font-size: 8em;
+=======
+     font-size: 5em;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
      color: white;
-     margin-top: 50px;
+     margin-top: 90px;
+     margin-bottom: 0px;
    }
+
    #inicioNombre{
      width: 200px;
      height: 45px;
@@ -66,11 +92,14 @@
    }
    
    .inicio{
- 
      font-family: "VT323-Regular";
+<<<<<<< HEAD
      font-size: 3em;
+=======
+     font-size: 2em;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
      color: white;
-     
+     margin: 0px;
    }
    
    .nombre{

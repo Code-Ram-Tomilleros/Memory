@@ -8,12 +8,17 @@
   src: url("../fonts/VT323-Regular.ttf");
 }
 
+h1 {
+  margin: 0px;
+  font-size: 80%;
+}
+
 body {
   background-image: url("../images/fondos/stars1.png");
   font-family: "VT323-Regular";
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: top center;
 }
 
 #inicioJugar {
@@ -21,7 +26,11 @@ body {
   width: 120px;
   height: 50px;
   font-size: 1.5em;
+<<<<<<< HEAD
   margin-top: 40px;
+=======
+  margin-top: 20px;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
   background-color: #f4abba;
   color: white;
   border-radius: none;
@@ -50,9 +59,14 @@ body {
     */
 .titulo {
   font-family: "VT323-Regular";
+<<<<<<< HEAD
   font-size: 8em;
+=======
+  font-size: 5em;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
   color: white;
-  margin-top: 50px;
+  margin-top: 90px;
+  margin-bottom: 0px;
 }
 
 #inicioNombre {
@@ -64,8 +78,13 @@ body {
 
 .inicio {
   font-family: "VT323-Regular";
+<<<<<<< HEAD
   font-size: 3em;
+=======
+  font-size: 2em;
+>>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
   color: white;
+  margin: 0px;
 }
 
 .nombre {
@@ -192,6 +211,52 @@ h3 {
   margin-left: 155px;
 }
 
+.modal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(244, 171, 186, 0.5);
+  top: 0px;
+  left: 0px;
+}
+
+.modal_window {
+  width: 300px;
+  height: 400px;
+  background-color: #EA596E;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal_title {
+  color: white;
+  text-align: center;
+  margin-top: 40%;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.modal_button {
+  padding: 10px 5px;
+  width: 47%;
+  border-radius: 10px;
+  color: #EA596E;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 /*
 body {
     background-color: #fff;
@@ -218,4 +283,3 @@ header form {
 .ocultar {
   display: none;
 }
-/*# sourceMappingURL=base.css.map */
