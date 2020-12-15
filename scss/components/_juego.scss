@@ -1,0 +1,31 @@
+.juego-contenido{
+    margin: 0 auto;
+    width: 95%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.izq,
+.der{
+    width: 20%;
+    height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cent{
+    padding-top: 25px;
+    width: 55%;
+    height:600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carta{
+    width: 18%;
+    height: 25%;
+    background-color: red;
+    background-image: url("../../img/cards/logoVerde.png");
+    margin-bottom: 5px;
+}

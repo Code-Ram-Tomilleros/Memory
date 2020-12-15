@@ -1,5 +1,12 @@
 .navbar-dark {
     background-color: #000;
     border-bottom: 5px solid #4b64b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
   }
 
+h3 {
+  color: #fff;
+}
