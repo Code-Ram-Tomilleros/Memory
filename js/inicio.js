@@ -10,7 +10,7 @@ let writing=str=>{
         if (i=== arrFromStr.length){
             clearInterval(printStr)
         }
-    },400 )      
+    },200 )      
 } 
 writing ("Introduce tu nombre:")
 
@@ -20,6 +20,7 @@ let boton=document.querySelector("#inicioJugar")
 let jugador=document.querySelector("#inicioNombre")
 let pantallaInicio=document.querySelector("#inicioFondo")
 let pantallaJuego=document.querySelector("#juegoFondo")
+let cabecera=document.querySelector("#tituloTop")
 
 boton.onclick=()=>{
     if(jugador.value!=""){
@@ -33,8 +34,7 @@ boton.onclick=()=>{
         //generada la partida, mostramos juego.html en el iframe
         pantallaInicio.classList.add ("ocultar")
         pantallaJuego.classList.remove("ocultar")
-        document.querySelector("body").style.backgroundImage=url("../images/fondos/stars2.png")
-
+        cabecera.classList.remove("ocultar")
         
     }
     else{
