@@ -1,122 +1,73 @@
-<<<<<<< HEAD
-=======
-@font-face{
-    font-family: "VT323-Regular";
-     src: url("../fonts/VT323-Regular.ttf");
-   }
+@font-face {
+  font-family: "VT323-Regular";
+  src: url("../fonts/VT323-Regular.ttf");
+}
 
-<<<<<<< HEAD
-   
+#inicioFondo {
+  padding-top: 150px;
+  background-image: url("../images/fondos/stars1.png");
+  font-family: "VT323-Regular";
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  height:100%;
+  min-height: 700px;
+}
 
-=======
-  h1 {
-    margin: 0px;
-    font-size: 80%;
-  }
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-  body{
-    background-image: url("../images/fondos/stars1.png");
-    font-family: "VT323-Regular";
-    background-size: cover;
-    background-attachment: fixed;
-<<<<<<< HEAD
-    background-position: center center;
-    } 
-=======
-    background-position: top center;
-    }
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-    
- 
-   #inicioJugar{
-     font-family: "VT323-Regular";
-     width: 120px;
-     height: 50px;
-     font-size: 1.5em;
-<<<<<<< HEAD
-     margin-top: 40px;
-=======
-     margin-top: 20px;
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-     background-color: #f4abba;
-     color:white;
-     border-radius:none;
-     outline:none;
-   }
-   
-   .form-submit-button,.form-submit-button-img{
-     box-shadow: none !important;
-   }
-<<<<<<< HEAD
-   .cabecera{
-    font-family: "VT323-Regular";
-    font-size: 3em;
-     color: white;
-     
-   }
-   
-   /* #inicioFondo{
-     margin-top:50px;
-     background-image: url("../images/fondos/stars2.png");
-     font-family: "VT323-Regular";
-     background-size: cover;
-     background-attachment: fixed;
-     background-position: center center;
-    }
-    */
-   .brain{
-    display:block;
-    margin:auto;
-=======
-   
-   #inicioFondo{
-     margin-top:150px;
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-   }
-   
-   .titulo{
-     font-family: "VT323-Regular";
-<<<<<<< HEAD
-     font-size: 8em;
-=======
-     font-size: 5em;
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-     color: white;
-     margin-top: 90px;
-     margin-bottom: 0px;
-   }
 
-   #inicioNombre{
-     width: 200px;
-     height: 45px;
-     font-size: 2em;
-     font-family: "VT323-Regular";
-   }
-   
-   .inicio{
-     font-family: "VT323-Regular";
-<<<<<<< HEAD
-     font-size: 3em;
-=======
-     font-size: 2em;
->>>>>>> f7b882044bd099801c559b3fc6fe2763a26e4022
-     color: white;
-     margin: 0px;
-   }
-   
-   .nombre{
-     width: 200px;
-     height: 160px;
-   }
-   
-   /* @media only screen and (max-width: 767px) {
+#inicioJugar {
+  font-family: "VT323-Regular";
+  width: 120px;
+  height: 50px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  background-color: #f4abba;
+  color: white;
+  border-radius: none;
+  outline: none;
+}
+
+// .form-submit-button,
+// .form-submit-button-img {
+//   box-shadow: none !important;
+// }
+
+
+.titulo {
+  font-family: "VT323-Regular";
+  font-size: 5em;
+  color: white;
+  margin-top: 90px;
+  margin-bottom: 0px;
+}
+
+.inicio {
+  font-family: "VT323-Regular";
+  font-size: 2em;
+  color: white;
+  margin: 0px;
+}
+#inicioNombre {
+  width: 200px;
+  height: 45px;
+  font-size: 2em;
+  font-family: "VT323-Regular";
+}
+
+
+.nombre {
+  width: 200px;
+  height: 160px;
+}
+
+/* @media only screen and (max-width: 767px) {
      body{
     background-image: url("../images/stars.jpg");
     
     
    } */
 
-   @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
 /* 
 h1 {
 	font-family: 'Lobster Two', cursive;
@@ -137,44 +88,38 @@ h1 {
 } */
 
 .pulse {
-	z-index: -1;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 30rem;
-	
-	circle {
-		fill: #f4abba;
-		transform: scale(0);
-		opacity: 0;
-		transform-origin: 50% 50%;
-		animation: pulse 4s cubic-bezier(.5,.5,0,1);
-		
-		&:nth-child(2) {
-			fill: #6664b9;
-			animation: pulse 4s 0.75s cubic-bezier(.5,.5,0,1);
-		}
-		
-		&:nth-child(3) {
-			fill: #13044b;
-			animation: pulse 4s 1.5s cubic-bezier(.5,.5,0,1);
-		}
-		
-	}
-	
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30rem;
+
+  circle {
+    fill: #f4abba;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 50% 50%;
+    animation: pulse 4s cubic-bezier(0.5, 0.5, 0, 1);
+
+    &:nth-child(2) {
+      fill: #6664b9;
+      animation: pulse 4s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+    }
+
+    &:nth-child(3) {
+      fill: #13044b;
+      animation: pulse 4s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+    }
+  }
 }
 
 @keyframes pulse {
-	
-	25% {
-		opacity: 0.4;
-	}
-	
-	100% {
-		transform: scale(1);
-	}
-	
+  25% {
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
-  
->>>>>>> ef325d2a418afe714567b204004ea7503b56611a
