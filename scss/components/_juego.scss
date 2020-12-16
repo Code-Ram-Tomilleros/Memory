@@ -7,31 +7,37 @@ $columnas:5;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  height:100%;
-  min-height: 700px;
+  height:100vh;
+  padding-top: 10px;
 }
 
-.izq,
+/* .izq,
 .cent,
 .der{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 .wrapper {
   display: grid;
   grid-template-columns: repeat($columnas, 1fr);
   grid-gap: 10px;
 }
-.carta{
-  width: 100px;
+
+.estrella{
+  display: inline-block;
 }
 .cajaNombre,
 .actions{
   text-align: center;
-  width: 75%;
-  background-color: rgba(245, 222, 179, 0.836);
-  border-radius: 25px;
-  padding: 30px;
+  display: grid;
+  align-items: center;
+  background-color:  rgba(244, 171, 186, 0.8);
+  border-radius: 18px;
+  margin: 5px;
+  padding-bottom: 30px;
 }
-
+#tablero .cartita:nth-child(1) {
+  display:none;
+  
+}

@@ -5,14 +5,14 @@
 }
 
 #inicioFondo {
-  padding-top: 150px;
+  padding-top: 50px;
   background-image: url("../images/fondos/stars1.png");
   font-family: "VT323-Regular";
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  height: 100%;
-  min-height: 700px;
+  height: 100vh;
+  text-align: center;
 }
 
 #inicioJugar {
@@ -31,8 +31,8 @@
   font-family: "VT323-Regular";
   font-size: 5em;
   color: white;
-  margin-top: 90px;
-  margin-bottom: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .inicio {
@@ -54,30 +54,6 @@
   height: 160px;
 }
 
-/* @media only screen and (max-width: 767px) {
-     body{
-    background-image: url("../images/stars.jpg");
-    
-    
-   } */
-/* 
-h1 {
-	font-family: 'Lobster Two', cursive;
-	font-size: 5rem;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
-	color: #343434;
-}
-
-.container {
-	position: relative;
-	z-index: 0;
-	background-color: #ededed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	overflow: hidden;
-} */
 .pulse {
   z-index: -1;
   position: absolute;
@@ -137,24 +113,17 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  height: 100%;
-  min-height: 700px;
+  height: 100vh;
+  padding-top: 10px;
 }
 
-.izq,
+/* .izq,
 .cent,
-.der {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.der{
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+  justify-content: center;
+  align-items: center;
+} */
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -163,17 +132,26 @@ h1 {
   grid-gap: 10px;
 }
 
-.carta {
-  width: 100px;
+.estrella {
+  display: inline-block;
 }
 
 .cajaNombre,
 .actions {
   text-align: center;
-  width: 75%;
-  background-color: rgba(245, 222, 179, 0.836);
-  border-radius: 25px;
-  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(244, 171, 186, 0.8);
+  border-radius: 18px;
+  margin: 5px;
+  padding-bottom: 30px;
+}
+
+#tablero .cartita:nth-child(1) {
+  display: none;
 }
 
 .modal_container {
@@ -229,4 +207,3 @@ h1 {
 .ocultar {
   display: none;
 }
-/*# sourceMappingURL=base.css.map */

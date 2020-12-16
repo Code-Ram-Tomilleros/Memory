@@ -39,7 +39,7 @@ function mostrarCartas() {
     for (let i = 0; i < cards.length; i++) {
         let duplicado = carta.cloneNode(true)
         duplicado.id = "carta-" + i
-        duplicado.style.display = "block"
+        //duplicado.style.display = "block"
         tablero.appendChild(duplicado) 
         
     }
@@ -88,9 +88,9 @@ document.querySelector("#tablero").onclick=(e)=>{
 
 // OCULTAR ESTRELLAS
 
-document.querySelector(".star-1").classList.add("ocultar")
-document.querySelector(".star-2").classList.add("ocultar")
-document.querySelector(".star-3").classList.add("ocultar")
+//document.querySelector(".star-1").classList.add("ocultar")
+//document.querySelector(".star-2").classList.add("ocultar")
+//document.querySelector(".star-3").classList.add("ocultar")
 
 
 

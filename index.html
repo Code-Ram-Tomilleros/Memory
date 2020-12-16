@@ -5,74 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Ram</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
 </head>
-<body> 
-<!-- INICIO PANT INIC -->
-    <div id="inicioFondo" class="content ocultar">
-        <div class="row justify-content-center ">
-         <img src="./images/fondos/brain.png" width="100" height="80"  alt="">
+
+<body>
+    <!-- INICIO PANT INIC -->
+    <div id="inicioFondo" class="pure-g ocultar">
+        <div class="pure-u-1">
+            <img src="./images/fondos/brain.png" width="100" height="80" alt="">
         </div>
-        <div class="row justify-content-center ">
+        <div class="pure-u-1">
             <h1 class="titulo">Memoram</h1>
-            <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
                 <circle id="Oval" cx="512" cy="512" r="512"></circle>
                 <circle id="Oval" cx="512" cy="512" r="512"></circle>
                 <circle id="Oval" cx="512" cy="512" r="512"></circle>
             </svg>
-            
+
         </div>
-        <div class="row justify-content-center">
+        <div class="pure-u-1">
             <div class="inicio"> </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="pure-u-1">
             <input type="text" id="inicioNombre" autocomplete="off">
         </div>
-        <div class="row justify-content-center">
+        <div class="pure-u-1">
             <button id="inicioJugar">Jugar</button>
         </div>
     </div>
-<!-- FIN PANT INIC -->
+    <!-- FIN PANT INIC -->
 
-<!-- INICIO PANT JUEGO -->
-<div class="row" id="pantallaJuego">
+    <!-- INICIO PANT JUEGO -->
+    <div class="pure-g" id="pantallaJuego">
 
-    <div class="col-3 izq">
-        <div class="cajaNombre">
-            <h3 id="nombreJugador">Miguel</h3>
-            <span class="star-1">⭐</span> 
-            <span class="star-2">⭐</span> 
-            <span class="star-3">⭐</span> 
-            <span class="star-4">⭐</span> 
-            <span class="star-5">⭐</span> 
-            <span class="star-6">⭐</span> 
-            <span class="star-7">⭐</span> 
+        <div class="pure-u-4-24">
+            <div class="cajaNombre">
+                <h3 id="nombreJugador">Miguel</h3>
+                <div class="estrellas">
+                <span class="star-1">⭐</span>
+                <span class="star-2">⭐</span>
+                <span class="star-3">⭐</span>
+                <span class="star-4">⭐</span>
+                <span class="star-5">⭐</span>
+                <span class="star-6">⭐</span>
+                <span class="star-7">⭐</span>
+            </div>
+            </div>
         </div>
+
+        <main class="pure-u-16-24">
+            <div clas="pure-g" id="tablero">
+                <div class="cartita pure-u-1-5" id="carta">
+                    <img class="pure-img" src="img/cards/back.png" data-id="0">
+                </div>
+            </div>
+        </main>
+
+        <div class="pure-u-4-24">
+            <div class="actions">
+                <h4 class="unit">🎮 Movimientos</h4>
+                <h4 class="numbers">0</h4>
+               <h4 class="seconds">⏰ Segundos </h4>
+                <h4 class="timeNum">0</h4>
+            </div>
+        </div>
+
     </div>
-
-    <main  class="col-6 cent" id="tablero">
-        <div class="cartita" id="carta">
-            <img src="img/cards/back.png" data-id="0">
-        </div>
-    </main>
-
-    <div class="col-3 der">
-        <div class="actions">
-            <h4 class="numbers">0</h4>
-            <h4 class="unit">🎮 Movimientos</h4>
-            <h4 class="timeNum">0</h4> 
-            <h4 class="seconds">⏰ Segundos  </h4>
-        </div>
-    </div>
-
-</div>  
-<!-- FIN PANTALLA JUEGO -->
+    <!-- FIN PANTALLA JUEGO -->
 
 
-<!-- INICIO MODAL -->
+    <!-- INICIO MODAL -->
 
     <div class="modal_container ocultar" id="modal_tiempo">
         <div class="modal_window">
