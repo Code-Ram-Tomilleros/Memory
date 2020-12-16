@@ -65,8 +65,8 @@ function mostrarCartas() {
  */
 let cartaLevantada=0
 let indiceCartaLevantada
-
-document.querySelector("#tablero").onclick=(e)=>{
+document.querySelector("#carta").onclick=(e)=>{
+    console.log ("holi")
     if(e.target.className=="cartita"){
         if(cartaLevantada==0){ 
         e.target.src=`${cards1[e.target.dataset.id].img}`
