@@ -1,122 +1,139 @@
-  let cards = [
-    { id: "0", img: "images/cards/css.png" },
-    { id: "1", img: "images/cards/gitlab.png " },
-    { id: "2", img: "images/cards/html.png" },
-    { id: "3", img: "images/cards/internet.png" },
-    { id: "4", img: "images/cards/js.png" },
-    { id: "5", img: "images/cards/mochuelo.png" },
-    { id: "6", img: "images/cards/php.png" },
-    { id: "7", img: "images/cards/python.png" },
-    { id: "8", img: "images/cards/react.png" },
-    { id: "9", img: "images/cards/sass.png" }]
+/* partida={
+    fecha: new Date(),
+    jugador: jugador.value,
+    jugada:[],
+    vidas:8
+} */
 
-  let cards2 = [
-        { id: "0", img: "images/cards/css.png" },
-        { id: "1", img: "images/cards/gitlab.png " },
-        { id: "2", img: "images/cards/html.png" },
-        { id: "3", img: "images/cards/internet.png" },
-        { id: "4", img: "images/cards/js.png" },
-        { id: "5", img: "images/cards/mochuelo.png" },
-        { id: "6", img: "images/cards/php.png" },
-        { id: "7", img: "images/cards/python.png" },
-        { id: "8", img: "images/cards/react.png" },
-        { id: "9", img: "images/cards/sass.png" }]
+let partida = JSON.parse(sessionStorage.getItem("memory"))
+let puntuacion = document.querySelector(".puntuacion")
+let jugador = document.querySelector("#nombreJugador")
+jugador.textContent=partida.jugador
+console.log(partida)
+
+document.querySelector("body").onload = () => {
+
+    if (partida == null)
+        window.location.src = "inicio.html"
+    puntuacion.innerHTML = partida.vidas
+    jugador.innerHTML = partida.jugador
+}
 
 
+// INICIAR EL ARRAY CON LAS IMG
+const cards = [
+    // { img: "images/cards/css.png" },
+    // { img: "images/cards/gitlab.png " },
+    // { img: "images/cards/html.png" },
+    // { img: "images/cards/internet.png" },
+    { img: "images/cards/js.png" },
+    { img: "images/cards/mochuelo.png" },
+    { img: "images/cards/php.png" },
+    { img: "images/cards/python.png" },
+    { img: "images/cards/react.png" },
+    { img: "images/cards/sass.png" },
 
-let carta= document.querySelector("#carta")
-let tablero = document.getElementById("tablero")
+    // { img: "images/cards/css.png" },
+    // { img: "images/cards/gitlab.png " },
+    // { img: "images/cards/html.png" },
+    // { img: "images/cards/internet.png" },
+    { img: "images/cards/js.png" },
+    { img: "images/cards/mochuelo.png" },
+    { img: "images/cards/php.png" },
+    { img: "images/cards/python.png" },
+    { img: "images/cards/react.png" },
+    { img: "images/cards/sass.png" }]
 
-   
+function mezclarCartas() {
+    cards.sort(function () { return Math.random() - 0.5 })
+}
+mezclarCartas()
 
 
+// document.querySelector("#nombrejugadodor").innerHTML=document.querySelector("#inicioNombre").value
 
-function mostrarCartas() {
-    //primero desordenamos el array cards:
-    //cards.sort(e => Math.random() - 0.5)
-    
-    //ahora lo recorremos para crear una carta y mostrarla:
-    for (let i = 0; i < cards.length; i++) {
-        let duplicado = carta.cloneNode(true)
-        duplicado.id = "carta-" + i
-        //duplicado.style.display = "block"
-        tablero.appendChild(duplicado) 
-        
+//CUENTA ATRÁS
+window.onload = updateClock;
+
+let totalTime = 60;
+
+function updateClock() {
+    document.querySelector(".tiempo").innerHTML = totalTime;
+    if (totalTime == 0) {
+        alert('Final');
+    } else {
+        totalTime -= 1;
+        setTimeout("updateClock()", 1000);
     }
 }
-    mostrarCartas()
 
-    
-
-
-
-/* function crearCartas(num) {
+// CREAR CARTAS Y AÑADIRLAS AL DOM
+function crearCartas(num) {
     for (i = 0; i < num; i++) {
         let carta = document.createElement("div")
-        let back = carta.appendChild(document.createElement("img"))
-        back.src = "img/cards/back.png"
-        let front = carta.appendChild(document.createElement("img"))
-        front.classList.add("ocultar")
-        front.classList.add("front")
-        back.classList.add("carta")
+        let img = carta.appendChild(document.createElement("img"))
+        img.src = "img/cards/back.png"
+        img.classList.add(i)
+        img.classList.add("carta")
+        carta.classList.add("pure-u-1-4")
+        img.classList.add("pure-img")
         document.querySelector(".wrapper").appendChild(carta)
+
     }
 }
- */
-let cartaLevantada=0
-let indiceCartaLevantada
-document.querySelector("#carta").onclick=(e)=>{
-    console.log ("holi")
-    if(e.target.className=="cartita"){
-        if(cartaLevantada==0){ 
-        e.target.src=`${cards1[e.target.dataset.id].img}`
-        cartaLevantada=1
-        indeceCartaLevantada=cards[e.target.dataset.id]}
 
-    }else if(cartaLevantada==1){
-        if(cards[indeceCartaLevantada].img==cards2[e.target.dataset.id].img){
-            //has acertado
+
+crearCartas(12)
+
+// PROGRAMAR EL CLICK DE LAS CARTAS
+
+let turno = 0
+let primeraCarta
+let segundaCarta
+let movimientos = 0
+let vidas = 0
+
+document.querySelector(".wrapper").onclick = (e) => {
+
+    if (turno == 0) {
+        let clase = e.target.classList[0]
+        e.target.src = cards[clase].img
+        primeraCarta = e.target
+        turno++
+    }
+    else if (turno == 1) {
+        let clase = e.target.classList[0]
+        e.target.src = cards[clase].img
+        segundaCarta = e.target
+
+        if (primeraCarta.src == segundaCarta.src) {
+            console.log("ganas")
+            turno--
+            movimientos++
+            document.querySelector(".movimientos").innerHTML = movimientos
+        }
+        else {
+            setTimeout(() => {
+                primeraCarta.src = "img/cards/back.png"
+                segundaCarta.src = "img/cards/back.png"
+                turno--
+                movimientos++
+                document.querySelector(".movimientos").innerHTML = movimientos
+                vidas++
+                document.querySelector(`.star-${vidas}`).classList.add("ocultar")
+                if (vidas == 8)
+                    document.querySelector("#modal_perdedor").classList.remove("ocultar")
+            }, 1300);
         }
     }
 }
 
 
+//nombre del jugador
 
 
 
-
-
-// OCULTAR ESTRELLAS
-
-//document.querySelector(".star-1").classList.add("ocultar")
-//document.querySelector(".star-2").classList.add("ocultar")
-//document.querySelector(".star-3").classList.add("ocultar")
-
-
-
-// function moveCounter(){
-//     moves++;
-//     counter.innerHTML = moves;
-//     //start timer on first click
-//     if(moves == 1){
-//         second = 0;
-//         minute = 0; 
-//         hour = 0;
-//         startTimer();
-//     }
-//     // setting rates based on moves
-//     if (moves > 8 && moves < 12){
-//         for( i= 0; i < 3; i++){
-//             if(i > 1){
-//                 stars[i].style.visibility = "collapse";
-//             }
-//         }
-//     }
-//     else if (moves > 13){
-//         for( i= 0; i < 3; i++){
-//             if(i > 0){
-//                 stars[i].style.visibility = "collapse";
-//             }
-//         }
-//     }
-// }
+// function reiniciar(){
+//     vidas=0
+//     turno=0
+//     movimientos=0
